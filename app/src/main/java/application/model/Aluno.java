@@ -15,7 +15,18 @@ public class Aluno {
     private long id;
     @Column(nullable = false)
     private String nome;
-    
 
-    
+    public void setId(long id) {
+        this.id = id;
+    }
+    public long getId() {
+        return this.id;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getNome() {
+        return this.nome;
+    }
 }
