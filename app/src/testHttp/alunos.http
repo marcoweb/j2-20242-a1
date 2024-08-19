@@ -1,4 +1,4 @@
-@baseUrl = https://8080-marcoweb-j220242a1-f0r3qehypwc.ws-us115.gitpod.io
+@baseUrl = https://8080-marcoweb-j220242a1-yt7qltmjn3v.ws-us115.gitpod.io
 
 ###
 GET {{baseUrl}}/alunos
@@ -8,5 +8,8 @@ POST {{baseUrl}}/alunos
 Content-Type: application/json
 
 {
-    "nome": "Fulano de Tal"
+    "nome": "Marco Carvalho"
 }
+
+###
+GET {{baseUrl}}/alunos/2

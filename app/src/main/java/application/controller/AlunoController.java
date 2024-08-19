@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import application.model.Aluno;
 import application.repository.AlunoRepository;
@@ -24,5 +25,10 @@ public class AlunoController {
     @PostMapping
     public Aluno insert(@RequestBody Aluno aluno) {
         return alunoRepo.save(aluno);
+    }
+
+    @GetMapping("/{id}")
+    public Aluno details(@PathVariable long id) {
+        return alunoRepo.findById(id).get();
     }
 }
