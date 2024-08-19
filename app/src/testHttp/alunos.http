@@ -13,3 +13,14 @@ Content-Type: application/json
 
 ###
 GET {{baseUrl}}/alunos/2
+
+###
+PUT {{baseUrl}}/alunos/1
+Content-Type: application/json
+
+{
+    "nome": "Nome de Teste"
+}
+
+###
+DELETE {{baseUrl}}/alunos/1
