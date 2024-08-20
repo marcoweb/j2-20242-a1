@@ -1,4 +1,4 @@
-@baseUrl = https://8080-marcoweb-j220242a1-yt7qltmjn3v.ws-us115.gitpod.io
+@baseUrl = https://8080-marcoweb-j220242a1-upzkfe1vid6.ws-us115.gitpod.io
 
 ###
 GET {{baseUrl}}/alunos
@@ -19,8 +19,8 @@ PUT {{baseUrl}}/alunos/1
 Content-Type: application/json
 
 {
-    "nome": "Nome de Teste"
+    "nome": ""
 }
 
 ###
-DELETE {{baseUrl}}/alunos/1
+DELETE {{baseUrl}}/alunos/2
